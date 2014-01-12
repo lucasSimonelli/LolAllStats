@@ -1,3 +1,3 @@
 class Summoner < ActiveRecord::Base
-	has_many: matches
+	has_many :matches
 end

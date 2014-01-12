@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140112001835) do
+ActiveRecord::Schema.define(version: 20140112005347) do
 
   create_table "matches", force: true do |t|
     t.integer  "gameId"
@@ -56,10 +56,10 @@ ActiveRecord::Schema.define(version: 20140112001835) do
     t.integer  "unitsHealed"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "summonerId"
+    t.integer  "summoner_id"
   end
 
-  add_index "matches", ["summonerId"], name: "index_matches_on_summonerId"
+  add_index "matches", ["summoner_id"], name: "index_matches_on_summoner_id"
 
   create_table "summoners", force: true do |t|
     t.string   "name"
